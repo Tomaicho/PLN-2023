@@ -1,0 +1,11 @@
+token: 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
+
+$git status -> permite ver quais os ficheiros que vão ser enviados ou não pelo commit
+
+$git add -> adiciona a pasta/ficheiro que se vai querer fazer commit
+
+$git commit -m "..." -> faz commit e escreve-se a mensagem das alterações que se fez
+
+$git push -> enviar para repositório
+
+$git pull -> download do repositório
