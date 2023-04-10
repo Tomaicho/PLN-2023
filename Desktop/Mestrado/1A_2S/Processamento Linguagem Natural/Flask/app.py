@@ -13,7 +13,11 @@ def projects():
 
 @app.route("/projects/3Es")
 def tresEs():
-    return render_template('3EsPLN.html')
+    return render_template('/projects/3EsPLN/templates/3Ehome.html')
+
+@app.route("/projects/3Es/combination")
+def tresEsComb():
+    return render_template('/projects/3EsPLN/templates/3Ecombination.html')
 
 @app.route("/layout")
 def layout():

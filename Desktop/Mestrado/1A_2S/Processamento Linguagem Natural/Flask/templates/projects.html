@@ -18,21 +18,32 @@
         font-size: 32px;
         color: #333333;
         text-transform: uppercase;
-        margin: 0;
+        /* margin: 0; */
     }
 
-    .project a {
-        font-size: 30px;
-        color: #333333;
-        text-transform: uppercase;
-        margin: 0;
-    }
-
-    .project p {
+    .project {
         font-size: 15px;
         color: #585858;
-        left : 35px;
+
     }
+    
+    .project a {
+        color: #382547;
+        text-transform: uppercase;
+        /* margin: 0; */
+        text-decoration: none;
+    }
+    .project a:hover {
+			color: rgb(55, 95, 180);
+		}
+
+    .project p {
+        color: #3a3a3a;
+        margin: 30px;
+        margin-top: 5px;
+
+    }
+
 </style>
 {% endblock %}
 
@@ -40,9 +51,20 @@
     <main>
         <div class="subject">
             <h1>Natural Language Processing</h1>
-            <div class="project"></div>
-                <h2><a href="projects/3Es">3E's page - A first contact with flask development</a></h2>
-                <p>
+            <div class="project">
+                <h2><a href="projects/3Es" title="3E's page">3E's page - A first contact with flask development</a></h2>
+                <p class="project">
+                    First web development using Flask pyhthon tool, after some previous contact with React.js for frontend development.
+                    Work consisted on creating a web page where three main topics should be explored: engineering, elephants and mares.
+                    These were the random words picked in class. The name 3E's comes from the spelling of these words in Portuguese: engenharia, elefantes e éguas.
+                </p>
+            </div>
+        </div>
+        <div class="subject">
+            <h1>Medical Imaging</h1>
+            <div class="project">
+                <h2><a href="projects/3Es" title="3E's page">MRI moduling</a></h2>
+                <p class="project">
                     First web development using Flask pyhthon tool, after some previous contact with React.js for frontend development.
                     Work consisted on creating a web page where three main topics should be explored: engineering, elephants and mares.
                     These were the random words picked in class. The name 3E's comes from the spelling of these words in Portuguese: engenharia, elefantes e éguas.

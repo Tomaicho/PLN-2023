@@ -1,0 +1,147 @@
+{% extends 'layout3Es.html' %}
+
+{% block title %}
+<title>3E's | Home</title>
+{% endblock %}
+
+{% block style %}
+<style>
+
+
+	.firstsection {
+		background-color: rgb(255, 255, 255);
+		height: 400px;
+		vertical-align: middle;
+	}
+
+	.secondsection {
+		background-color: lightgray;
+		height: 400px;
+		vertical-align: middle;
+	}
+
+	.thirdsection {
+		background-color: rgb(255, 255, 255);
+		height: 400px;
+	}
+
+	.box-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: black;
+		max-width: 80%;
+		margin: auto;
+		height: 80%;
+	}
+
+	.firsthalf {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.secondhalf {
+		width: 30%;
+	}
+
+	.secondhalf img {
+		width: 70%;
+		border: 4px solid white;
+		border-radius: 150px;
+		display: block;
+		margin: auto;
+	}
+
+	.text-big {
+		font-family: 'Piazzolla', serif;
+		font-weight: bold;
+		font-size: 35px;
+	}
+
+	.text-small {
+		font-size: 18px;
+	}
+
+	.btn {
+		padding: 8px 20px;
+		margin: 7px 0;
+		border: 2px solid white;
+		border-radius: 8px;
+		background: none;
+		color: white;
+		cursor: pointer;
+	}
+
+	.btn-sm {
+		padding: 6px 10px;
+		vertical-align: middle;
+	}
+
+	.section {
+		height: 400px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 90%;
+		margin: auto;
+	}
+
+	.section-Left {
+		flex-direction: row-reverse;
+	}
+
+	.paras {
+		padding: 0px 65px;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+</style>
+{% endblock %}
+
+{% block main %}
+<main>
+	<section class="firstsection" id="Engineering">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="web">Engineering</h1>
+				<p class="text-small">
+					Engineering involves the application of the principles of science and mathematics to solve real world problems and to innovate new products and processes across a wide range of industries and applications. Designing, testing and building structures, machines, devices and processes using maths and science is all part of an engineer’s role, so there will be certain similarities in study. However, the details will change depending on which field of engineering you study, from aerospace and chemical to civil and electronics through to mechanical engineering and beyond.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection" id="Elephants">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">Elephants</h1>
+				<p class="text-small">
+					Elephants are the largest land mammals on earth and have distinctly massive bodies, large ears, and long trunks. They use their trunks to pick up objects, trumpet warnings, greet other elephants, or suck up water for drinking or bathing, among other uses. Both male and female African elephants grow tusks and each individual can either be left- or right-tusked, and the one they use more is usually smaller because of wear and tear. Elephant tusks serve many purposes. These extended teeth can be used to protect the elephant's trunk, lift and move objects, gather food, and strip bark from trees. They can also be used for defense. During times of drought, elephants even use their tusks to dig holes to find water underground.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="thirdsection" id="Éguas">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">Éguas (mares)</h1>
+				<p class="text-small">
+					A mare is an adult female horse or other equine. In most cases, a mare is a female horse over the age of three, and a filly is a female horse three and younger. In Thoroughbred horse racing, a mare is defined as a female horse more than four years old. The word can also be used for other female equine animals, particularly mules and zebras, but a female donkey is usually called a "jenny". A broodmare is a mare used for breeding. A horse's female parent is known as its dam.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock %}
