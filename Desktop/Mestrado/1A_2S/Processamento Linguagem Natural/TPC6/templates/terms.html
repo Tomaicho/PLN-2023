@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<h3>Add Term</h3>
+
+<div>
+<form action="/term" method="POST">
+    <div class="mb-3">
+      <label class="form-label">Designation:</label>
+      <input type="text" class="form-control" name="designation">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description:</label>
+        <input type="text" class="form-control" name="description">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+{% if message %}
+{{message}}
+{% endif %}
+
+<hr>
+
+<div class="list-group">
+  <table id="example" class="display" style="width:100%">
+    <thead>
+      <tr>
+          <th>Termo</th>
+          <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for d in designations %}
+          <tr>
+              <td><a href="/term/{{d}}" class="">{{d}}</a></td>
+              <td><button type="button"  class="btn btn-link" onclick="deleteTerm('{{d}}')"> Delete </button></td>
+          </tr>  
+          {% endfor %}
+        </tbody>
+      </tfoot>
+  </table>
+  
+  {% endblock %}
+
